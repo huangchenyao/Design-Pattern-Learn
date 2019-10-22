@@ -7,16 +7,16 @@ public class OperationFactoryTest {
     @Test
     public void test_add_operate() {
         Operation operation = OperationFactory.createOperate("+");
-        operation.setNumberA(1f);
-        operation.setNumberB(2f);
-        Assert.assertEquals(1f + 2f, operation.getResult(), 0);
+        operation.setNumberA(1d);
+        operation.setNumberB(2d);
+        Assert.assertEquals(1d + 2d, operation.getResult(), 0);
     }
 
     @Test
     public void test_div_operate() {
         Operation operation = OperationFactory.createOperate("/");
-        operation.setNumberA(1f);
-        operation.setNumberB(3f);
-        Assert.assertEquals(1f / 3f, operation.getResult(), 0.00001);
+        operation.setNumberA(1d);
+        operation.setNumberB(3d);
+        Assert.assertEquals(1d / 3d, operation.getResult(), 0);
     }
 }
