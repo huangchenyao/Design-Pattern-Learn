@@ -1,4 +1,4 @@
-package hcy.factory;
+package hcy.factory.normalfactory;
 
 public class LeiFeng {
     public void sweep() {

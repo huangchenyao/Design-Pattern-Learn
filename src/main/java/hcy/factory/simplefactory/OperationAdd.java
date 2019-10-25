@@ -1,4 +1,4 @@
-package hcy.simplefactory;
+package hcy.factory.simplefactory;
 
 public class OperationAdd extends Operation {
     @Override

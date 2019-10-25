@@ -1,4 +1,4 @@
-package hcy.factory;
+package hcy.factory.normalfactory;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package hcy.simplefactory;
+package hcy.factory.simplefactory;
 
 public class OperationFactory {
     public static Operation createOperate(String operate) {
