@@ -1,21 +1,18 @@
 package hcy.singleton;
 
 public class Singleton {
-    private static final Object syncRoot = new Object();
-    private static Singleton instance;
+    //一个静态的实例
+    private static Singleton singleton;
 
+    //私有化构造函数
     private Singleton() {
-
     }
 
+    //给出一个公共的静态方法返回一个单一实例
     public static Singleton getInstance() {
-        if (instance == null) {
-            synchronized (syncRoot) {
-                if (instance == null) {
-                    instance = new Singleton();
-                }
-            }
+        if (singleton == null) {
+            singleton = new Singleton();
         }
-        return instance;
+        return singleton;
     }
 }
