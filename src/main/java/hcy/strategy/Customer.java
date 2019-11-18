@@ -13,7 +13,7 @@ public class Customer {
         this.amount = amount;
         totalAmount += amount;
         /* 变化点，我们将策略的制定转移给了策略工厂，将这部分责任分离出去 */
-        calPrice = CalPriceFactory.getInstance().createCalPrice(this);
+        calPrice = CalPriceFactory.createCalPrice(this);
     }
 
     //计算客户最终要付的钱
